@@ -1,97 +1,77 @@
 package model;
 
+/**
+ * @author [Manolo Peng] Sep 8, 2025
+ */
 public class User {
 
-	public String getName() {
-		return name;
+	//
+	private long id;
+	//
+	public String username = "Manolo";
+	private String psw;
+	private boolean isVIP;
+	private float balance;
+
+	/**
+	 * constructors
+	 */
+	public User() {
+
 	}
 
-	public void setName(String name) {
-		this.name = name;
-	}
+	public User(long id) {
+		this.id = id;
+		
 
-	public String getEmail() {
-		return email;
 	}
-
-	public void setEmail(String email) {
-		this.email = email;
+	public User(long id, String username, String psw, boolean isVIP, float balance) {
+		this.id = id;
+		this.username = username;
+		this.psw = psw;
+		this.isVIP = isVIP;
+		this.balance = balance;
 	}
-
-	public String getPassword() {
-		return password;
-	}
-
-	public void setPassword(String password) {
-		this.password = password;
-	}
-
-	public int getEdad() {
-		return edad;
-	}
-
-	public void setEdad(int edad) {
-		this.edad = edad;
-	}
-
-	public float getEstatura() {
-		return estatura;
-	}
-
-	public void setEstatura(float estatura) {
-		this.estatura = estatura;
-	}
-
-	public int getTelefono() {
-		return telefono;
-	}
-
-	public void setTelefono(int telefono) {
-		this.telefono = telefono;
-	}
-
-	public int getID() {
-		return ID;
-	}
-
-	public void setID(int iD) {
-		ID = iD;
-	}
+	
 
 	public long getId() {
 		return id;
+	}
+
+	public String getUsername() {
+		return username;
+	}
+
+	public String getPsw() {
+		return psw;
+	}
+
+	public boolean isVIP() {
+		return isVIP;
+	}
+
+	public float getBalance() {
+		return balance;
 	}
 
 	public void setId(long id) {
 		this.id = id;
 	}
 
-	String name;
-	String email;
-	String password;
-	int edad;
-	float estatura;
-	int telefono;
-	int ID;
-
-//Los atributos de...
-
-	private long id;
-
-	public User(long id, String name) {
-
+	public void setUsername(String username) {
+		this.username = username;
 	}
 
-	public User() {
+	public void setPsw(String psw) {
+		this.psw = psw;
 	}
 
-	public User(long id, String name, String email, String password, float estatura) {
-		this.id = id;
-		this.name = name;
-		this.password = password;
-		this.estatura = estatura;
-		this.email = email;
- 
-	}	
+	public void setVIP(boolean isVIP) {
+		this.isVIP = isVIP;
+	}
+
+	public void setBalance(float balance) {
+		this.balance = balance;
+	}
 
 }
