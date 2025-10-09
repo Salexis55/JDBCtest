@@ -14,7 +14,7 @@ import user.DBHelper;
 /**
  * @author 17 sept 2025
  */
-public class JDBC_Test {
+public class JDBCTest {
 
 	public static void main(String[] args) {
 //		String dbURL = "jdbc:mysql://localhost:3306/test";
