@@ -10,7 +10,7 @@ public class Test {
 	
 		
 		User user1 = new User();
-		User user2 = new User(1, "Alejandro");
+		User user2 = new User();
 
 		System.out.println(1);
 		System.out.println("zaza dame memo");
